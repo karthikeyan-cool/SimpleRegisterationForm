@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Form Validator</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<div class="container">
+    <form action="in.html" id="form">
+        <h1>Register With us</h1>
+
+        <div class="form-control">
+            <label for="Username">Username</label>
+            <input
+                    id="Username"
+                    name="username"
+                    placeholder="Enter Your Username"
+                    type="text"
+            />
+
+            <svg class="svg-control svg-position svg-hidden" id="check" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                      fill="#2ecc71"/>
+            </svg>
+
+            <svg class="svg-control svg-position svg-hidden" id="exclamation" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                      fill="#e74c3c"/>
+            </svg>
+
+            <small>error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="Email">Email</label>
+            <input
+                    id="Email"
+                    name="email"
+                    placeholder="Enter Your Email"
+                    type="text"
+            />
+
+
+            <svg class="svg-control svg-position svg-hidden" id="check" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                      fill="#2ecc71"/>
+            </svg>
+
+            <svg class="svg-control svg-position svg-hidden" id="exclamation" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                      fill="#e74c3c"/>
+            </svg>
+
+            <small>error message</small>
+        </div>
+
+        <div class="form-control " style="padding-bottom: 7px;">
+            <label for="Password">Password</label>
+            <input
+                    id="Password"
+                    name="password"
+                    placeholder="Enter Your Password"
+                    type="password"
+            />
+
+            <div id="showpasswordggroup">
+                <input id="showpassword" style="width:min-content; display: inline; margin-top: 10px;" type="checkbox">
+                <label for="showpassword" style="margin: 0; display: inline;">Show Password</label>
+            </div>
+
+            <svg class="svg-control svg-position svg-hidden" id="check" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                      fill="#2ecc71"/>
+            </svg>
+
+            <svg class="svg-control svg-position svg-hidden" id="exclamation" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                      fill="#e74c3c"/>
+            </svg>
+
+
+            <small>error message</small>
+
+            <div>
+                <ul>
+                    <li id="1">Must Contain At least One LowerCase Character</li>
+                    <li id="2">Must Contain At least One Upper Case Character</li>
+                    <li id="3">Must Contain At Least One Number</li>
+                    <li id="4">Must Contain At Least One Special Character in !@#$%^&*(){}+</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="form-control">
+            <label for="Confirmpassword">ConfirmPassword</label>
+            <input
+                    id="Confirmpassword"
+                    name="confirmpassword"
+                    placeholder="Enter Your Password again"
+                    type="password"
+            />
+
+
+            <svg class="svg-control svg-position svg-hidden" id="check" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+                      fill="#2ecc71"/>
+            </svg>
+
+            <svg class="svg-control svg-position svg-hidden" id="exclamation" viewBox="0 0 512 512"
+                 xmlns="http://www.w3.org/2000/svg">
+                <!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                      fill="#e74c3c"/>
+            </svg>
+
+
+            <small>error message</small>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
