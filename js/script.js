@@ -11,7 +11,6 @@ const nospecialcasepassword = document.getElementById("4");
 const checkbox=document.getElementById("showpassword");
 
 
-
 // regex for passwordcheck
 
 const lowercaseregex = /[a-z]+/;
