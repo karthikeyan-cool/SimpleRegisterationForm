@@ -10,6 +10,8 @@ const nonumbercasepassword = document.getElementById("3");
 const nospecialcasepassword = document.getElementById("4");
 const checkbox=document.getElementById("showpassword");
 
+
+
 // regex for passwordcheck
 
 const lowercaseregex = /[a-z]+/;
@@ -31,8 +33,8 @@ function showError(element, message)
     const parent = element.parentElement;
     parent.className = "form-control error";
     parent.querySelector("small").innerText = message;
-    parent.querySelector("#check").setAttribute("class","svg-control svg-position svg-hidden");
-    parent.querySelector("#exclamation").setAttribute("class","svg-control svg-position svg-visible");
+    parent.querySelector(".check").setAttribute("class","check svg-control svg-position svg-hidden");
+    parent.querySelector(".exclamation").setAttribute("class","exclamation svg-control svg-position svg-visible");
 
 }
 
@@ -46,8 +48,8 @@ function showSuccess(element)
 {
     const parent = element.parentElement;
     parent.className = "form-control success";
-    parent.querySelector("#exclamation").setAttribute("class","svg-control svg-position svg-hidden");
-    parent.querySelector("#check").setAttribute("class","svg-control svg-position svg-visible");
+    parent.querySelector(".exclamation").setAttribute("class","exclamation svg-control svg-position svg-hidden");
+    parent.querySelector(".check").setAttribute("class","check svg-control svg-position svg-visible");
 
 }
 
@@ -87,6 +89,7 @@ function checkusername(username)
 {
     const checkusername = /^[A-Za-z]+$/;
     const checkspce = /\S/;
+    username.value=username.value.trim();
 
     if (checkspce.test(username.value))
     {
@@ -113,7 +116,7 @@ function checkemail(email)
 {
     const checkemail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     const checkspace = /\S/;
-
+    email.value=email.value.trim();
     if (checkspace.test(email.value))
     {
         if (checkemail.test(email.value))
@@ -171,6 +174,9 @@ function checkRegex(regex, password, element)
 
 function validatepassword(password)
 {
+
+    password.value=password.value.trim();
+
     checkRegex(lowercaseregex, password, nolowercasepassword);
     checkRegex(uppercaseregex, password, nouppercasepassword);
     checkRegex(numberregex, password, nonumbercasepassword);
@@ -191,6 +197,8 @@ function validatepassword(password)
 
 function checkpasswordlenght(confirmpassword, password)
 {
+
+    confirmpassword.value=confirmpassword.value.trim();
 
     if (confirmpassword.value !== "")
     {
